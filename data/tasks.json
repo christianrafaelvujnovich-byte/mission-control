@@ -1,108 +1,161 @@
 {
   "tasks": [
     {
-      "id": "guide_onboarding",
-      "title": "🚀 Onboarding Guide — Set Up Mission Control",
-      "description": "Welcome to Mission Control! Follow these steps to complete your setup. Work through each subtask in order.\n\n**Tip:** Click on a subtask to see detailed instructions. Check it off when done.",
-      "status": "permanent",
-      "project": "guides",
-      "tags": ["guide", "setup"],
-      "subtasks": [
-        { "id": "sub_001", "title": "1. Enable GitHub Pages: Settings → Pages → Branch: main → Save", "done": false },
-        { "id": "sub_002", "title": "2. Create GitHub Token: github.com/settings/tokens → Generate (classic) → Scope: repo", "done": false },
-        { "id": "sub_003", "title": "3. Connect Dashboard: Open your GitHub Pages URL → Click 'Connect GitHub' → Paste token", "done": false },
-        { "id": "sub_004", "title": "4. Install Tailscale: brew install tailscale && tailscale up", "done": false },
-        { "id": "sub_005", "title": "5. Enable Funnel: tailscale funnel 18789 → Copy your URL", "done": false },
-        { "id": "sub_006", "title": "6. Generate Webhook Token: openssl rand -hex 32 → Save it", "done": false },
-        { "id": "sub_007", "title": "7. Add GitHub Webhook: Settings → Webhooks → Add → URL: https://YOUR-TAILSCALE-URL/hooks/github?token=YOUR-TOKEN", "done": false },
-        { "id": "sub_008", "title": "8. Test: Create a task, move to In Progress, verify MoltBot receives notification", "done": false }
-      ],
-      "priority": "high",
-      "comments": [
-        {
-          "author": "Mission Control",
-          "text": "Once all steps are complete, you can archive this guide or keep it as reference. Your setup is done when MoltBot responds to task changes!",
-          "timestamp": "2026-01-01T00:00:00Z"
-        }
-      ],
-      "createdAt": "2026-01-01T00:00:00Z"
-    },
-    {
-      "id": "guide_user",
-      "title": "📖 User Guide — How to Use Mission Control",
-      "description": "Learn how to use Mission Control effectively. Both you AND MoltBot can manage tasks!\n\n**Two ways to manage tasks:**\n• 👤 **You** — Use the Dashboard UI (drag & drop, buttons, forms)\n• 🤖 **MoltBot** — Uses CLI scripts or edits tasks.json directly",
-      "status": "permanent",
-      "project": "guides",
-      "tags": ["guide", "help"],
-      "subtasks": [
-        { "id": "sub_001", "title": "— THE BOARD —", "done": false },
-        { "id": "sub_002", "title": "Columns: Permanent (recurring) → Backlog → In Progress → Review → Done", "done": false },
-        { "id": "sub_003", "title": "Drag & Drop: Move tasks between columns to change status", "done": false },
-        { "id": "sub_004", "title": "Click task card to open details and edit", "done": false },
-        { "id": "sub_005", "title": "— CREATING TASKS —", "done": false },
-        { "id": "sub_006", "title": "👤 You: Click '+' button in any column header", "done": false },
-        { "id": "sub_007", "title": "🤖 MoltBot: Edits data/tasks.json or uses CLI", "done": false },
-        { "id": "sub_008", "title": "— TASK DETAILS —", "done": false },
-        { "id": "sub_009", "title": "Title: Short, clear name for the task", "done": false },
-        { "id": "sub_010", "title": "Description: Detailed instructions (Markdown supported)", "done": false },
-        { "id": "sub_011", "title": "Subtasks: Break work into smaller steps (checkable)", "done": false },
-        { "id": "sub_012", "title": "Comments: Add notes, feedback, or progress updates", "done": false },
-        { "id": "sub_013", "title": "Priority: High (🔴) / Medium (🟡) / Low (🟢)", "done": false },
-        { "id": "sub_014", "title": "Project: Organize tasks by project/category", "done": false },
-        { "id": "sub_015", "title": "— WORKFLOW WITH MOLTBOT —", "done": false },
-        { "id": "sub_016", "title": "1. Create task in Backlog with clear description", "done": false },
-        { "id": "sub_017", "title": "2. Move to 'In Progress' → MoltBot gets notified via webhook", "done": false },
-        { "id": "sub_018", "title": "3. MoltBot works on task, updates subtasks & adds comments", "done": false },
-        { "id": "sub_019", "title": "4. MoltBot moves to 'Review' when done", "done": false },
-        { "id": "sub_020", "title": "5. You review: Approve → Done, or add feedback → back to In Progress", "done": false },
-        { "id": "sub_021", "title": "— DASHBOARD FEATURES —", "done": false },
-        { "id": "sub_022", "title": "🔍 Search: Filter tasks by text", "done": false },
-        { "id": "sub_023", "title": "📁 Project filter: Click project buttons to filter", "done": false },
-        { "id": "sub_024", "title": "⚙️ Settings: Add/edit projects", "done": false },
-        { "id": "sub_025", "title": "📦 Archive: Store completed tasks out of sight", "done": false },
-        { "id": "sub_026", "title": "👥 Team: See repo collaborators (if public)", "done": false },
-        { "id": "sub_027", "title": "📚 Docs: Built-in documentation", "done": false },
-        { "id": "sub_028", "title": "— MOLTBOT CAPABILITIES —", "done": false },
-        { "id": "sub_029", "title": "🤖 Can CREATE tasks (via CLI or JSON)", "done": false },
-        { "id": "sub_030", "title": "🤖 Can UPDATE task status, subtasks, comments", "done": false },
-        { "id": "sub_031", "title": "🤖 Can MOVE tasks between columns", "done": false },
-        { "id": "sub_032", "title": "🤖 Can DELETE/archive tasks", "done": false },
-        { "id": "sub_033", "title": "🤖 Receives WEBHOOK when you move tasks to In Progress", "done": false }
-      ],
-      "priority": "medium",
-      "comments": [
-        {
-          "author": "Mission Control",
-          "text": "This guide stays in Permanent so you can always reference it. The subtasks aren't meant to be 'completed' — they're documentation!",
-          "timestamp": "2026-01-01T00:00:00Z"
-        }
-      ],
-      "createdAt": "2026-01-01T00:00:01Z"
-    },
-    {
-      "id": "task_example",
-      "title": "Example Task — Delete me when ready!",
-      "description": "This is an example of what a real task looks like. Feel free to edit or delete it.\n\n**Good task descriptions include:**\n- What needs to be done\n- Why it matters\n- Any constraints or requirements\n- Links to relevant resources",
+      "id": "task_001",
+      "title": "🔴 Shane Benson billing dispute",
+      "description": "Unexpected 4th charge on his account. He only agreed to 3 months. Needs Torin to resolve.",
       "status": "backlog",
-      "project": "default",
-      "tags": ["example"],
+      "priority": "high",
+      "tags": ["billing", "torin"],
       "subtasks": [
-        { "id": "sub_001", "title": "First step of the task", "done": false },
-        { "id": "sub_002", "title": "Second step", "done": false },
-        { "id": "sub_003", "title": "Final step", "done": false }
+        {"id": "sub_001", "title": "Flag to Torin", "done": false},
+        {"id": "sub_002", "title": "Confirm resolution with Shane", "done": false}
       ],
-      "priority": "low",
       "comments": [],
-      "createdAt": "2026-01-01T00:00:02Z"
+      "createdAt": "2026-04-03T04:00:00Z"
+    },
+    {
+      "id": "task_002",
+      "title": "Valentim training update in 1Fit",
+      "description": "His training program hasn't been updated. He flagged it Apr 2.",
+      "status": "backlog",
+      "priority": "high",
+      "tags": ["1fit", "program"],
+      "subtasks": [],
+      "comments": [],
+      "createdAt": "2026-04-03T04:00:00Z"
+    },
+    {
+      "id": "task_003",
+      "title": "Jessica Schultz new meal plan",
+      "description": "New macro-calorie direction agreed on Apr 2 call. Build using meal plan system.",
+      "status": "backlog",
+      "priority": "high",
+      "tags": ["meal-plan"],
+      "subtasks": [
+        {"id": "sub_001", "title": "Pull Jessica's profile and preferences", "done": false},
+        {"id": "sub_002", "title": "Build meal plan with meal_plan_lib", "done": false},
+        {"id": "sub_003", "title": "Run Samuel QC", "done": false},
+        {"id": "sub_004", "title": "Upload to Drive", "done": false}
+      ],
+      "comments": [],
+      "createdAt": "2026-04-03T04:00:00Z"
+    },
+    {
+      "id": "task_004",
+      "title": "Jasmijn WhatsApp video call",
+      "description": "Tuesday 12:30-1pm her time / 6:30-7pm Perth. Message sent, waiting on confirmation.",
+      "status": "in_progress",
+      "priority": "medium",
+      "tags": ["scheduling"],
+      "subtasks": [
+        {"id": "sub_001", "title": "Message sent", "done": true},
+        {"id": "sub_002", "title": "Confirm time", "done": false}
+      ],
+      "comments": [],
+      "createdAt": "2026-04-03T04:00:00Z"
+    },
+    {
+      "id": "task_005",
+      "title": "Paula Williams check-in",
+      "description": "Follow-up from kickoff call Apr 2.",
+      "status": "done",
+      "priority": "medium",
+      "tags": ["check-in"],
+      "subtasks": [],
+      "comments": [{"author": "Steve", "text": "Sent morning message via wacli", "timestamp": "2026-04-03T01:50:00Z"}],
+      "createdAt": "2026-04-03T04:00:00Z"
+    },
+    {
+      "id": "task_006",
+      "title": "Jean Ly chicken/tofu recipes",
+      "description": "Recipe pack already built. Needs to be shared with Jean. Due end of this week.",
+      "status": "backlog",
+      "priority": "medium",
+      "tags": ["meal-plan", "recipes"],
+      "subtasks": [],
+      "comments": [],
+      "createdAt": "2026-04-03T04:00:00Z"
+    },
+    {
+      "id": "task_007",
+      "title": "SMELT hook integration",
+      "description": "Sarah built Layer 2 hook (11% savings). Layer 4 needs different approach.",
+      "status": "done",
+      "priority": "medium",
+      "tags": ["infrastructure"],
+      "subtasks": [],
+      "comments": [{"author": "Sarah", "text": "Layer 2 hook built and enabled. Layer 4 blocked by bootstrap timing.", "timestamp": "2026-04-03T03:58:00Z"}],
+      "createdAt": "2026-04-03T04:00:00Z"
+    },
+    {
+      "id": "task_008",
+      "title": "Neil Stern kickoff prep",
+      "description": "Monday Apr 6, 8am. Prep client profile and materials.",
+      "status": "backlog",
+      "priority": "medium",
+      "tags": ["call-prep"],
+      "subtasks": [
+        {"id": "sub_001", "title": "Review intake form", "done": false},
+        {"id": "sub_002", "title": "Prep call notes template", "done": false}
+      ],
+      "comments": [],
+      "createdAt": "2026-04-03T04:00:00Z"
+    },
+    {
+      "id": "task_009",
+      "title": "Process 10 transcripts into ClientOS",
+      "description": "Downloaded overnight. Jessica, Paula, Jean, Kim, Elizabeth, Christine, Rami, Harry.",
+      "status": "backlog",
+      "priority": "low",
+      "tags": ["transcripts"],
+      "subtasks": [],
+      "comments": [],
+      "createdAt": "2026-04-03T04:00:00Z"
+    },
+    {
+      "id": "task_010",
+      "title": "Second WhatsApp draft batch",
+      "description": "Green clients: Amy A, Ayoma, Briana, Christine, Geny, Kamryn, Matthew, Meaveen, Michael Rossi, Neil.",
+      "status": "backlog",
+      "priority": "low",
+      "tags": ["whatsapp"],
+      "subtasks": [],
+      "comments": [],
+      "createdAt": "2026-04-03T04:00:00Z"
+    },
+    {
+      "id": "task_011",
+      "title": "Resolve unsynced wacli clients",
+      "description": "Conor, Elizabeth Kronyak, Jamie, Oliver, Phil-ausy, Randy, Yousef not mapped yet.",
+      "status": "backlog",
+      "priority": "low",
+      "tags": ["wacli"],
+      "subtasks": [],
+      "comments": [],
+      "createdAt": "2026-04-03T04:00:00Z"
+    },
+    {
+      "id": "task_012",
+      "title": "1Fit IP block check",
+      "description": "Test login on home wifi. Should be cleared after overnight cooldown.",
+      "status": "backlog",
+      "priority": "low",
+      "tags": ["1fit"],
+      "subtasks": [],
+      "comments": [],
+      "createdAt": "2026-04-03T04:00:00Z"
+    },
+    {
+      "id": "task_013",
+      "title": "WhatsApp client comms — morning batch",
+      "description": "16 clients messaged this morning.",
+      "status": "done",
+      "priority": "high",
+      "tags": ["whatsapp"],
+      "subtasks": [],
+      "comments": [{"author": "Steve", "text": "All 16 clients responded to via wacli. Coaching style guide updated with 8 corrections.", "timestamp": "2026-04-03T02:30:00Z"}],
+      "createdAt": "2026-04-03T01:00:00Z"
     }
-  ],
-  "projects": [
-    { "id": "guides", "name": "Guides", "color": "#10b981", "icon": "📚" },
-    { "id": "default", "name": "My Project", "color": "#3b82f6", "icon": "📁" }
-  ],
-  "activities": [
-    { "type": "created", "actor": "Mission Control", "task": "Onboarding Guide", "time": "just now" },
-    { "type": "created", "actor": "Mission Control", "task": "User Guide", "time": "just now" }
-  ],
-  "lastUpdated": "2026-01-01T00:00:00Z"
+  ]
 }
