@@ -1,161 +1,182 @@
 {
   "tasks": [
     {
-      "id": "task_001",
-      "title": "🔴 Shane Benson billing dispute",
-      "description": "Unexpected 4th charge on his account. He only agreed to 3 months. Needs Torin to resolve.",
+      "id": "guide_tags",
+      "title": "📋 Tag Reference",
+      "description": "**Urgency Levels:**\n🔴 URGENT - Problems, complaints, billing, health concerns\n🟡 ACTION - Client waiting on a response or deliverable\n🟢 CHECK-IN - Routine follow-up, no pressure\n⚪ MONITOR - You messaged last, watching for reply\n\n**Context Tags:**\n`billing` - Payment/subscription issues\n`nutrition` - Macros, meal plans, food questions\n`training` - Program, exercises, form, equipment\n`adherence` - Compliance, consistency, motivation\n`scheduling` - Calls, appointments, timezone\n`medical` - Injury, illness, recovery, health\n`onboarding` - New client setup, first week\n`personal` - Life stuff, rapport, check-in\n`deliverable` - Meal plan, program, recipe pack to send\n`escalation` - Needs Torin or external action",
+      "status": "permanent",
+      "priority": "low",
+      "tags": ["reference"],
+      "subtasks": [],
+      "comments": [],
+      "createdAt": "2026-04-03T09:00:00Z"
+    },
+    {
+      "id": "wa_shane",
+      "title": "🔴 Shane Benson - Billing dispute",
+      "description": "**Urgency:** 🔴 URGENT\n\n**Their message (Mar 27):**\n> Torin, I saw that there was another transaction on my account today. I already paid $333.33 in December, January, and in early March. I don't know why that would've occurred since we only agreed to a three month deal.\n\n**Context:** Inactive client charged a 4th month. He tagged Torin directly.\n\n**Draft reply:**\n```\nHey Shane, I just saw this. I'll flag it with Torin now and get it sorted for you. Sorry about that.\n```\n\n**Action needed:** Flag to Torin first, then respond.",
       "status": "backlog",
       "priority": "high",
-      "tags": ["billing", "torin"],
+      "tags": ["billing", "escalation"],
       "subtasks": [
         {"id": "sub_001", "title": "Flag to Torin", "done": false},
-        {"id": "sub_002", "title": "Confirm resolution with Shane", "done": false}
+        {"id": "sub_002", "title": "Reply to Shane", "done": false}
       ],
       "comments": [],
-      "createdAt": "2026-04-03T04:00:00Z"
+      "createdAt": "2026-04-03T09:00:00Z"
     },
     {
-      "id": "task_002",
-      "title": "Valentim training update in 1Fit",
-      "description": "His training program hasn't been updated. He flagged it Apr 2.",
-      "status": "backlog",
-      "priority": "high",
-      "tags": ["1fit", "program"],
+      "id": "wa_amy",
+      "title": "⚪ Amy A - Food question answered",
+      "description": "**Urgency:** ⚪ MONITOR\n\n**Your last message (Apr 1):**\n> Extra calories will quite often come from fat so meat and sauces typically\n\n**Status:** You answered her food question. Waiting on her response.\n\n**No draft needed** - monitoring only.",
+      "status": "done",
+      "priority": "low",
+      "tags": ["nutrition", "personal"],
+      "subtasks": [],
+      "comments": [{"author": "Steve", "text": "No action needed. Monitoring for reply.", "timestamp": "2026-04-03T09:00:00Z"}],
+      "createdAt": "2026-04-03T09:00:00Z"
+    },
+    {
+      "id": "wa_ayoma",
+      "title": "⚪ Ayoma - Family emergency, cancelled",
+      "description": "**Urgency:** ⚪ MONITOR\n\n**Your last message (Mar 30):**\n> Hey Ayoma we can cancel it sure. I'm so terribly sorry to hear of all this!\n\n**Context:** Family situation. You offered condolences and cancelled her session.\n\n**No draft needed** - give her space, check in next week if no word.",
+      "status": "done",
+      "priority": "low",
+      "tags": ["personal", "scheduling"],
       "subtasks": [],
       "comments": [],
-      "createdAt": "2026-04-03T04:00:00Z"
+      "createdAt": "2026-04-03T09:00:00Z"
     },
     {
-      "id": "task_003",
-      "title": "Jessica Schultz new meal plan",
-      "description": "New macro-calorie direction agreed on Apr 2 call. Build using meal plan system.",
-      "status": "backlog",
-      "priority": "high",
-      "tags": ["meal-plan"],
-      "subtasks": [
-        {"id": "sub_001", "title": "Pull Jessica's profile and preferences", "done": false},
-        {"id": "sub_002", "title": "Build meal plan with meal_plan_lib", "done": false},
-        {"id": "sub_003", "title": "Run Samuel QC", "done": false},
-        {"id": "sub_004", "title": "Upload to Drive", "done": false}
-      ],
+      "id": "wa_briana",
+      "title": "⚪ Briana - Road trip prep",
+      "description": "**Urgency:** ⚪ MONITOR\n\n**Your last message (Mar 30):**\n> Awesome that's a great goal! On the road things like protein bars and jerky are decent options\n\n**Status:** You gave travel nutrition tips. Waiting on her.\n\n**No draft needed.**",
+      "status": "done",
+      "priority": "low",
+      "tags": ["nutrition", "personal"],
+      "subtasks": [],
       "comments": [],
-      "createdAt": "2026-04-03T04:00:00Z"
+      "createdAt": "2026-04-03T09:00:00Z"
     },
     {
-      "id": "task_004",
-      "title": "Jasmijn WhatsApp video call",
-      "description": "Tuesday 12:30-1pm her time / 6:30-7pm Perth. Message sent, waiting on confirmation.",
-      "status": "in_progress",
-      "priority": "medium",
+      "id": "wa_christine",
+      "title": "⚪ Christine - Post-call check",
+      "description": "**Urgency:** ⚪ MONITOR\n\n**Your last message (Apr 2):**\n> Hey Christine it was good to catch up. I hope the rest of this week is good :)\n\n**Context:** Post-call message. Program extended 2 weeks (car accident). Near lowest weight. Back to gym soon.\n\n**No draft needed.**",
+      "status": "done",
+      "priority": "low",
+      "tags": ["personal", "medical"],
+      "subtasks": [],
+      "comments": [],
+      "createdAt": "2026-04-03T09:00:00Z"
+    },
+    {
+      "id": "wa_geny",
+      "title": "🟢 Geny - Meeting follow-up",
+      "description": "**Urgency:** 🟢 CHECK-IN\n\n**Your last message (Apr 2):**\n> Hey would you like to do a meeting in 20 minutes?\n\n**Context:** You offered a meeting slot. No confirmation back.\n\n**Draft reply:**\n```\nHey Geny, did you end up seeing my message about the meeting? Let me know when works for you this week.\n```",
+      "status": "backlog",
+      "priority": "low",
       "tags": ["scheduling"],
+      "subtasks": [],
+      "comments": [],
+      "createdAt": "2026-04-03T09:00:00Z"
+    },
+    {
+      "id": "wa_kamryn",
+      "title": "⚪ Kamryn - Pre-trip checklist sent",
+      "description": "**Urgency:** ⚪ MONITOR\n\n**Your last message (Mar 30):**\n> ✅ 1-3 workouts ✅ Daily weigh ins until your trip ✅ Daily food tracking until your trip ✅ Good step count\n\n**Context:** Sent her a pre-trip checklist.\n\n**No draft needed.**",
+      "status": "done",
+      "priority": "low",
+      "tags": ["adherence", "personal"],
+      "subtasks": [],
+      "comments": [],
+      "createdAt": "2026-04-03T09:00:00Z"
+    },
+    {
+      "id": "wa_matthew",
+      "title": "⚪ Matthew Phan - Scheduling confirmed",
+      "description": "**Urgency:** ⚪ MONITOR\n\n**Your last message (Mar 31):**\n> Hey that would be fine!\n\n**Context:** Scheduling reply. Call upcoming.\n\n**No draft needed.**",
+      "status": "done",
+      "priority": "low",
+      "tags": ["scheduling"],
+      "subtasks": [],
+      "comments": [],
+      "createdAt": "2026-04-03T09:00:00Z"
+    },
+    {
+      "id": "wa_michael",
+      "title": "⚪ Michael Rossi - Meal plan sent",
+      "description": "**Urgency:** ⚪ MONITOR\n\n**Context:** USDA-verified meal plan sent Apr 2. Samuel QC passed. Waiting on his feedback.\n\n**No draft needed.** Call scheduled Mon Apr 7.",
+      "status": "done",
+      "priority": "low",
+      "tags": ["deliverable", "nutrition"],
+      "subtasks": [],
+      "comments": [],
+      "createdAt": "2026-04-03T09:00:00Z"
+    },
+    {
+      "id": "task_jessica_plan",
+      "title": "🟡 Jessica Schultz - Meal plan built",
+      "description": "**Urgency:** 🟡 ACTION\n\n**Context:** New macro-calorie meal plan built. 1,450 kcal / 160P / 95C / 45F. Based on Biolayne + Lyle McDonald frameworks.\n\n**Drive:** https://docs.google.com/document/d/1BH7cAQM0osIRwkljpeawWaItALEfQmQe/edit\n\n**Status:** Needs Christian's review before sending to Jessica.",
+      "status": "review",
+      "priority": "high",
+      "tags": ["deliverable", "nutrition"],
       "subtasks": [
-        {"id": "sub_001", "title": "Message sent", "done": true},
-        {"id": "sub_002", "title": "Confirm time", "done": false}
+        {"id": "sub_001", "title": "Christian reviews plan", "done": false},
+        {"id": "sub_002", "title": "Run Samuel QC", "done": false},
+        {"id": "sub_003", "title": "Send to Jessica via wacli", "done": false}
       ],
       "comments": [],
-      "createdAt": "2026-04-03T04:00:00Z"
+      "createdAt": "2026-04-03T09:00:00Z"
     },
     {
-      "id": "task_005",
-      "title": "Paula Williams check-in",
-      "description": "Follow-up from kickoff call Apr 2.",
-      "status": "done",
-      "priority": "medium",
-      "tags": ["check-in"],
-      "subtasks": [],
-      "comments": [{"author": "Steve", "text": "Sent morning message via wacli", "timestamp": "2026-04-03T01:50:00Z"}],
-      "createdAt": "2026-04-03T04:00:00Z"
+      "id": "task_valentim",
+      "title": "🟡 Valentim - Training update needed",
+      "description": "**Urgency:** 🟡 ACTION\n\n**Context:** His training hasn't been updated in 1Fit. He flagged it Apr 2. Message sent acknowledging.\n\n**Action:** Christian needs to update his training in 1Fit manually.",
+      "status": "in_progress",
+      "priority": "high",
+      "tags": ["training", "deliverable"],
+      "subtasks": [
+        {"id": "sub_001", "title": "Message sent acknowledging", "done": true},
+        {"id": "sub_002", "title": "Update training in 1Fit", "done": false}
+      ],
+      "comments": [],
+      "createdAt": "2026-04-03T09:00:00Z"
     },
     {
-      "id": "task_006",
-      "title": "Jean Ly chicken/tofu recipes",
-      "description": "Recipe pack already built. Needs to be shared with Jean. Due end of this week.",
+      "id": "task_jean_recipes",
+      "title": "🟡 Jean Ly - Share recipe pack",
+      "description": "**Urgency:** 🟡 ACTION\n\n**Context:** Chicken + tofu recipe pack already built and on Drive. Due by end of this week. Christian needs to share the link with Jean.",
       "status": "backlog",
       "priority": "medium",
-      "tags": ["meal-plan", "recipes"],
+      "tags": ["deliverable", "nutrition"],
       "subtasks": [],
       "comments": [],
-      "createdAt": "2026-04-03T04:00:00Z"
+      "createdAt": "2026-04-03T09:00:00Z"
     },
     {
-      "id": "task_007",
-      "title": "SMELT hook integration",
-      "description": "Sarah built Layer 2 hook (11% savings). Layer 4 needs different approach.",
-      "status": "done",
-      "priority": "medium",
-      "tags": ["infrastructure"],
-      "subtasks": [],
-      "comments": [{"author": "Sarah", "text": "Layer 2 hook built and enabled. Layer 4 blocked by bootstrap timing.", "timestamp": "2026-04-03T03:58:00Z"}],
-      "createdAt": "2026-04-03T04:00:00Z"
-    },
-    {
-      "id": "task_008",
-      "title": "Neil Stern kickoff prep",
-      "description": "Monday Apr 6, 8am. Prep client profile and materials.",
+      "id": "task_neil_prep",
+      "title": "🟢 Neil Stern - Kickoff call prep",
+      "description": "**Urgency:** 🟢 CHECK-IN\n\n**Context:** Monday Apr 6, 8am. New client kickoff.\n\n**Action:** Steve to prep client brief the night before.",
       "status": "backlog",
       "priority": "medium",
-      "tags": ["call-prep"],
+      "tags": ["scheduling", "onboarding"],
       "subtasks": [
         {"id": "sub_001", "title": "Review intake form", "done": false},
         {"id": "sub_002", "title": "Prep call notes template", "done": false}
       ],
       "comments": [],
-      "createdAt": "2026-04-03T04:00:00Z"
+      "createdAt": "2026-04-03T09:00:00Z"
     },
     {
-      "id": "task_009",
-      "title": "Process 10 transcripts into ClientOS",
-      "description": "Downloaded overnight. Jessica, Paula, Jean, Kim, Elizabeth, Christine, Rami, Harry.",
+      "id": "task_1fit",
+      "title": "🟢 1Fit IP block check",
+      "description": "**Context:** IP was flagged from automation yesterday. Test login on home wifi today.",
       "status": "backlog",
       "priority": "low",
-      "tags": ["transcripts"],
+      "tags": ["training"],
       "subtasks": [],
       "comments": [],
-      "createdAt": "2026-04-03T04:00:00Z"
-    },
-    {
-      "id": "task_010",
-      "title": "Second WhatsApp draft batch",
-      "description": "Green clients: Amy A, Ayoma, Briana, Christine, Geny, Kamryn, Matthew, Meaveen, Michael Rossi, Neil.",
-      "status": "backlog",
-      "priority": "low",
-      "tags": ["whatsapp"],
-      "subtasks": [],
-      "comments": [],
-      "createdAt": "2026-04-03T04:00:00Z"
-    },
-    {
-      "id": "task_011",
-      "title": "Resolve unsynced wacli clients",
-      "description": "Conor, Elizabeth Kronyak, Jamie, Oliver, Phil-ausy, Randy, Yousef not mapped yet.",
-      "status": "backlog",
-      "priority": "low",
-      "tags": ["wacli"],
-      "subtasks": [],
-      "comments": [],
-      "createdAt": "2026-04-03T04:00:00Z"
-    },
-    {
-      "id": "task_012",
-      "title": "1Fit IP block check",
-      "description": "Test login on home wifi. Should be cleared after overnight cooldown.",
-      "status": "backlog",
-      "priority": "low",
-      "tags": ["1fit"],
-      "subtasks": [],
-      "comments": [],
-      "createdAt": "2026-04-03T04:00:00Z"
-    },
-    {
-      "id": "task_013",
-      "title": "WhatsApp client comms — morning batch",
-      "description": "16 clients messaged this morning.",
-      "status": "done",
-      "priority": "high",
-      "tags": ["whatsapp"],
-      "subtasks": [],
-      "comments": [{"author": "Steve", "text": "All 16 clients responded to via wacli. Coaching style guide updated with 8 corrections.", "timestamp": "2026-04-03T02:30:00Z"}],
-      "createdAt": "2026-04-03T01:00:00Z"
+      "createdAt": "2026-04-03T09:00:00Z"
     }
   ]
 }
