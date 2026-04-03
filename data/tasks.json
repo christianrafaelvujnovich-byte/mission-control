@@ -6,7 +6,9 @@
       "description": "**Urgency Levels:**\n🔴 URGENT - Problems, complaints, billing, health concerns\n🟡 ACTION - Client waiting on a response or deliverable\n🟢 CHECK-IN - Routine follow-up, no pressure\n⚪ MONITOR - You messaged last, watching for reply\n\n**Context Tags:**\n`billing` - Payment/subscription issues\n`nutrition` - Macros, meal plans, food questions\n`training` - Program, exercises, form, equipment\n`adherence` - Compliance, consistency, motivation\n`scheduling` - Calls, appointments, timezone\n`medical` - Injury, illness, recovery, health\n`onboarding` - New client setup, first week\n`personal` - Life stuff, rapport, check-in\n`deliverable` - Meal plan, program, recipe pack to send\n`escalation` - Needs Torin or external action",
       "status": "permanent",
       "priority": "low",
-      "tags": ["reference"],
+      "tags": [
+        "reference"
+      ],
       "subtasks": [],
       "comments": [],
       "createdAt": "2026-04-03T09:00:00Z"
@@ -17,13 +19,25 @@
       "description": "**Urgency:** 🔴 URGENT\n\n**Their message (Mar 27):**\n> Torin, I saw that there was another transaction on my account today. I already paid $333.33 in December, January, and in early March. I don't know why that would've occurred since we only agreed to a three month deal.\n\n**Context:** Inactive client charged a 4th month. He tagged Torin directly.\n\n**Draft reply:**\n```\nHey Shane, I just saw this. I'll flag it with Torin now and get it sorted for you. Sorry about that.\n```\n\n**Action needed:** Flag to Torin first, then respond.",
       "status": "backlog",
       "priority": "high",
-      "tags": ["billing", "escalation"],
+      "tags": [
+        "billing",
+        "escalation"
+      ],
       "subtasks": [
-        {"id": "sub_001", "title": "Flag to Torin", "done": false},
-        {"id": "sub_002", "title": "Reply to Shane", "done": false}
+        {
+          "id": "sub_001",
+          "title": "Flag to Torin",
+          "done": false
+        },
+        {
+          "id": "sub_002",
+          "title": "Reply to Shane",
+          "done": false
+        }
       ],
       "comments": [],
-      "createdAt": "2026-04-03T09:00:00Z"
+      "createdAt": "2026-04-03T09:00:00Z",
+      "sortOrder": 0
     },
     {
       "id": "wa_amy",
@@ -31,9 +45,18 @@
       "description": "**Urgency:** ⚪ MONITOR\n\n**Your last message (Apr 1):**\n> Extra calories will quite often come from fat so meat and sauces typically\n\n**Status:** You answered her food question. Waiting on her response.\n\n**No draft needed** - monitoring only.",
       "status": "done",
       "priority": "low",
-      "tags": ["nutrition", "personal"],
+      "tags": [
+        "nutrition",
+        "personal"
+      ],
       "subtasks": [],
-      "comments": [{"author": "Steve", "text": "No action needed. Monitoring for reply.", "timestamp": "2026-04-03T09:00:00Z"}],
+      "comments": [
+        {
+          "author": "Steve",
+          "text": "No action needed. Monitoring for reply.",
+          "timestamp": "2026-04-03T09:00:00Z"
+        }
+      ],
       "createdAt": "2026-04-03T09:00:00Z"
     },
     {
@@ -42,7 +65,10 @@
       "description": "**Urgency:** ⚪ MONITOR\n\n**Your last message (Mar 30):**\n> Hey Ayoma we can cancel it sure. I'm so terribly sorry to hear of all this!\n\n**Context:** Family situation. You offered condolences and cancelled her session.\n\n**No draft needed** - give her space, check in next week if no word.",
       "status": "done",
       "priority": "low",
-      "tags": ["personal", "scheduling"],
+      "tags": [
+        "personal",
+        "scheduling"
+      ],
       "subtasks": [],
       "comments": [],
       "createdAt": "2026-04-03T09:00:00Z"
@@ -53,7 +79,10 @@
       "description": "**Urgency:** ⚪ MONITOR\n\n**Your last message (Mar 30):**\n> Awesome that's a great goal! On the road things like protein bars and jerky are decent options\n\n**Status:** You gave travel nutrition tips. Waiting on her.\n\n**No draft needed.**",
       "status": "done",
       "priority": "low",
-      "tags": ["nutrition", "personal"],
+      "tags": [
+        "nutrition",
+        "personal"
+      ],
       "subtasks": [],
       "comments": [],
       "createdAt": "2026-04-03T09:00:00Z"
@@ -64,7 +93,10 @@
       "description": "**Urgency:** ⚪ MONITOR\n\n**Your last message (Apr 2):**\n> Hey Christine it was good to catch up. I hope the rest of this week is good :)\n\n**Context:** Post-call message. Program extended 2 weeks (car accident). Near lowest weight. Back to gym soon.\n\n**No draft needed.**",
       "status": "done",
       "priority": "low",
-      "tags": ["personal", "medical"],
+      "tags": [
+        "personal",
+        "medical"
+      ],
       "subtasks": [],
       "comments": [],
       "createdAt": "2026-04-03T09:00:00Z"
@@ -75,10 +107,13 @@
       "description": "**Urgency:** 🟢 CHECK-IN\n\n**Your last message (Apr 2):**\n> Hey would you like to do a meeting in 20 minutes?\n\n**Context:** You offered a meeting slot. No confirmation back.\n\n**Draft reply:**\n```\nHey Geny, did you end up seeing my message about the meeting? Let me know when works for you this week.\n```",
       "status": "backlog",
       "priority": "low",
-      "tags": ["scheduling"],
+      "tags": [
+        "scheduling"
+      ],
       "subtasks": [],
       "comments": [],
-      "createdAt": "2026-04-03T09:00:00Z"
+      "createdAt": "2026-04-03T09:00:00Z",
+      "sortOrder": 0
     },
     {
       "id": "wa_kamryn",
@@ -86,7 +121,10 @@
       "description": "**Urgency:** ⚪ MONITOR\n\n**Your last message (Mar 30):**\n> ✅ 1-3 workouts ✅ Daily weigh ins until your trip ✅ Daily food tracking until your trip ✅ Good step count\n\n**Context:** Sent her a pre-trip checklist.\n\n**No draft needed.**",
       "status": "done",
       "priority": "low",
-      "tags": ["adherence", "personal"],
+      "tags": [
+        "adherence",
+        "personal"
+      ],
       "subtasks": [],
       "comments": [],
       "createdAt": "2026-04-03T09:00:00Z"
@@ -97,7 +135,9 @@
       "description": "**Urgency:** ⚪ MONITOR\n\n**Your last message (Mar 31):**\n> Hey that would be fine!\n\n**Context:** Scheduling reply. Call upcoming.\n\n**No draft needed.**",
       "status": "done",
       "priority": "low",
-      "tags": ["scheduling"],
+      "tags": [
+        "scheduling"
+      ],
       "subtasks": [],
       "comments": [],
       "createdAt": "2026-04-03T09:00:00Z"
@@ -108,7 +148,10 @@
       "description": "**Urgency:** ⚪ MONITOR\n\n**Context:** USDA-verified meal plan sent Apr 2. Samuel QC passed. Waiting on his feedback.\n\n**No draft needed.** Call scheduled Mon Apr 7.",
       "status": "done",
       "priority": "low",
-      "tags": ["deliverable", "nutrition"],
+      "tags": [
+        "deliverable",
+        "nutrition"
+      ],
       "subtasks": [],
       "comments": [],
       "createdAt": "2026-04-03T09:00:00Z"
@@ -119,11 +162,26 @@
       "description": "**Urgency:** 🟡 ACTION\n\n**Context:** New macro-calorie meal plan built. 1,450 kcal / 160P / 95C / 45F. Based on Biolayne + Lyle McDonald frameworks.\n\n**Drive:** https://docs.google.com/document/d/1BH7cAQM0osIRwkljpeawWaItALEfQmQe/edit\n\n**Status:** Needs Christian's review before sending to Jessica.",
       "status": "review",
       "priority": "high",
-      "tags": ["deliverable", "nutrition"],
+      "tags": [
+        "deliverable",
+        "nutrition"
+      ],
       "subtasks": [
-        {"id": "sub_001", "title": "Christian reviews plan", "done": false},
-        {"id": "sub_002", "title": "Run Samuel QC", "done": false},
-        {"id": "sub_003", "title": "Send to Jessica via wacli", "done": false}
+        {
+          "id": "sub_001",
+          "title": "Christian reviews plan",
+          "done": false
+        },
+        {
+          "id": "sub_002",
+          "title": "Run Samuel QC",
+          "done": false
+        },
+        {
+          "id": "sub_003",
+          "title": "Send to Jessica via wacli",
+          "done": false
+        }
       ],
       "comments": [],
       "createdAt": "2026-04-03T09:00:00Z"
@@ -134,10 +192,21 @@
       "description": "**Urgency:** 🟡 ACTION\n\n**Context:** His training hasn't been updated in 1Fit. He flagged it Apr 2. Message sent acknowledging.\n\n**Action:** Christian needs to update his training in 1Fit manually.",
       "status": "in_progress",
       "priority": "high",
-      "tags": ["training", "deliverable"],
+      "tags": [
+        "training",
+        "deliverable"
+      ],
       "subtasks": [
-        {"id": "sub_001", "title": "Message sent acknowledging", "done": true},
-        {"id": "sub_002", "title": "Update training in 1Fit", "done": false}
+        {
+          "id": "sub_001",
+          "title": "Message sent acknowledging",
+          "done": true
+        },
+        {
+          "id": "sub_002",
+          "title": "Update training in 1Fit",
+          "done": false
+        }
       ],
       "comments": [],
       "createdAt": "2026-04-03T09:00:00Z"
@@ -148,10 +217,14 @@
       "description": "**Urgency:** 🟡 ACTION\n\n**Context:** Chicken + tofu recipe pack already built and on Drive. Due by end of this week. Christian needs to share the link with Jean.",
       "status": "backlog",
       "priority": "medium",
-      "tags": ["deliverable", "nutrition"],
+      "tags": [
+        "deliverable",
+        "nutrition"
+      ],
       "subtasks": [],
       "comments": [],
-      "createdAt": "2026-04-03T09:00:00Z"
+      "createdAt": "2026-04-03T09:00:00Z",
+      "sortOrder": 0
     },
     {
       "id": "task_neil_prep",
@@ -159,13 +232,25 @@
       "description": "**Urgency:** 🟢 CHECK-IN\n\n**Context:** Monday Apr 6, 8am. New client kickoff.\n\n**Action:** Steve to prep client brief the night before.",
       "status": "backlog",
       "priority": "medium",
-      "tags": ["scheduling", "onboarding"],
+      "tags": [
+        "scheduling",
+        "onboarding"
+      ],
       "subtasks": [
-        {"id": "sub_001", "title": "Review intake form", "done": false},
-        {"id": "sub_002", "title": "Prep call notes template", "done": false}
+        {
+          "id": "sub_001",
+          "title": "Review intake form",
+          "done": false
+        },
+        {
+          "id": "sub_002",
+          "title": "Prep call notes template",
+          "done": false
+        }
       ],
       "comments": [],
-      "createdAt": "2026-04-03T09:00:00Z"
+      "createdAt": "2026-04-03T09:00:00Z",
+      "sortOrder": 1
     },
     {
       "id": "task_1fit",
@@ -173,10 +258,14 @@
       "description": "**Context:** IP was flagged from automation yesterday. Test login on home wifi today.",
       "status": "backlog",
       "priority": "low",
-      "tags": ["training"],
+      "tags": [
+        "training"
+      ],
       "subtasks": [],
       "comments": [],
-      "createdAt": "2026-04-03T09:00:00Z"
+      "createdAt": "2026-04-03T09:00:00Z",
+      "sortOrder": 1
     }
-  ]
+  ],
+  "lastUpdated": "2026-04-03T10:42:24.732Z"
 }
