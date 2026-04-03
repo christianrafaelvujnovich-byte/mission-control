@@ -209,7 +209,8 @@
         }
       ],
       "comments": [],
-      "createdAt": "2026-04-03T09:00:00Z"
+      "createdAt": "2026-04-03T09:00:00Z",
+      "project": ""
     },
     {
       "id": "task_jean_recipes",
@@ -267,5 +268,5 @@
       "sortOrder": 1
     }
   ],
-  "lastUpdated": "2026-04-03T10:42:46.626Z"
+  "lastUpdated": "2026-04-03T10:49:37.191Z"
 }
